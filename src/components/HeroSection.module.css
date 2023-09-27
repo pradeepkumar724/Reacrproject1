@@ -1,0 +1,75 @@
+.main {
+  width: 1280px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh-72px);
+}
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+}
+.textContainer h1 {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 90px;
+}
+.textContainer p {
+  color: grey;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.availbleContainer p {
+  color: grey;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.imageConatiner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* padding: 10px 0px; */
+}
+.imageConatiner img {
+  width: 60px;
+}
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+.button1 {
+  padding: 6px 10px;
+  color: white;
+  background: rgb(172, 13, 13);
+  border: 1px solid rgb(172, 13, 13);
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button2 {
+  padding: 6px 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid rgb(20, 18, 18);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.shoeContainer {
+  width: 600px;
+  height: 700px;
+  align-self: flex-end;
+}
+.shoe {
+  width: 100%;
+  object-fit: cover;
+}
