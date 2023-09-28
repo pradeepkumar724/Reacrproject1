@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-size: 62.5%;
+  /* background: black; */
 }
 
 body {
@@ -12,3 +15,7 @@ body {
   font-family: "Pattaya", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+
+/* `${classes.hamburger} ${
+  openHamburger && classes.hamburgerOpen
+}` */

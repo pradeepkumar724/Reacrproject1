@@ -1,46 +1,47 @@
 .main {
-  width: 1280px;
+  width: 90%;
   margin: 0px auto;
   display: flex;
-  justify-content: center;
-  height: calc(100vh-72px);
+  height: calc(100vh - 80px);
 }
 .container {
-  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-self: center;
 }
+
 .textContainer h1 {
-  font-size: 90px;
-  font-weight: 800;
-  line-height: 90px;
+  font-size: 8rem;
+  margin: 0px;
+  line-height: 8rem;
+  font-weight: 700;
+  color: rgb(36, 209, 36);
 }
 .textContainer p {
+  font-size: 1.6rem;
   color: grey;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .availbleContainer p {
   color: grey;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .imageConatiner {
   display: flex;
   gap: 20px;
   align-items: center;
-  /* padding: 10px 0px; */
 }
 .imageConatiner img {
-  width: 60px;
+  width: 606rempx;
 }
 .buttonContainer {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 .button1 {
   padding: 6px 10px;
@@ -49,13 +50,13 @@
   border: 1px solid rgb(172, 13, 13);
   border-radius: 4px;
   outline: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 .button2 {
   padding: 6px 10px;
   color: black;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   background: transparent;
   border: 1px solid rgb(20, 18, 18);
@@ -65,11 +66,50 @@
 }
 
 .shoeContainer {
-  width: 600px;
-  height: 700px;
-  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 .shoe {
   width: 100%;
-  object-fit: cover;
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    /* background-color: black; */
+    /* border: 2px solid white; */
+    /* border-radius: 1rem; */
+  }
+  .container {
+    width: 100%;
+    padding: 1rem;
+    order: 1;
+    margin-top: -50px;
+    gap: 15px;
+  }
+  .container h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  .container p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  .shoeContainer {
+    width: 100%;
+  }
+  .shoe {
+    margin-top: 50px;
+    width: 100%;
+  }
 }

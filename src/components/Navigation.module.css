@@ -1,10 +1,11 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 1280px;
-  margin: auto;
+  padding: 2rem;
   height: 72px;
   align-items: center;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 1s ease;
 }
 .logo {
   width: 50px;
@@ -14,6 +15,9 @@
   list-style-type: none;
   display: flex;
   gap: 42px;
+}
+.lists li {
+  font-size: 2rem;
 }
 .button {
   background-color: rgb(172, 13, 13);
@@ -25,4 +29,74 @@
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
+}
+.hamburger {
+  top: 0px;
+  bottom: 0px;
+  position: fixed;
+  right: 0px;
+  display: none;
+  /* background: black; */
+}
+
+.options {
+  display: none;
+}
+.menuContainer {
+  display: none;
+}
+.menu {
+  font-size: 50px;
+  color: black;
+}
+
+.menuCross {
+  font-size: 50px;
+  color: black;
+  border-radius: 50%;
+  padding: 0rem 2rem;
+  border: 1px solid black;
+}
+
+.menuOptions {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  margin-top: 2rem;
+}
+.menuOptions li {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 568px) {
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .lists {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .menuContainer {
+    display: block;
+  }
+
+  .hamburgerMobile {
+    background-color: white;
+    top: 0px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
